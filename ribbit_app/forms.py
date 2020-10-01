@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django import forms
 from django.utils.html import strip_tags
 from ribbit_app.models import Ribbit
-
+# here we add all the modules 
 
 class UserCreateForm(UserCreationForm):
     email = forms.EmailField(required=True, widget=forms.widgets.TextInput(attrs={'placeholder': 'Email'}))
